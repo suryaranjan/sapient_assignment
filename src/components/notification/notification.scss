@@ -1,0 +1,29 @@
+.customNotification{
+    .notification-container{
+        width: 18%;
+
+        .message{
+            font-size: 1.8rem;
+        }
+    }   
+}
+
+@media (max-width: 1050px){
+    .customNotification{
+        .notification-container{
+            width: 46%;
+        }   
+    }
+
+}
+@media (max-width: 500px){
+    .customNotification{
+        .notification-container{
+            width: 60%;
+            .message{
+                font-size: 2.5rem;
+            }
+        }   
+    }
+
+}

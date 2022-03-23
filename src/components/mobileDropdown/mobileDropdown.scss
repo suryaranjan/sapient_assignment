@@ -1,0 +1,51 @@
+.customDropdown.basic-single{
+    
+    .css-9gakcf-option,.css-1n7v3ny-option,.css-yt9ioa-option{
+        background: #bf2957;
+        color: white;
+        z-index: 99999;
+    }
+    .select__indicator-separator.css-1okebmr-indicatorSeparator{
+        background-color: unset;
+    }
+
+    .css-1s2u09g-control, .select__control--focused, .css-1pahdxg-control{
+        background: #bf2957;
+        color: white;
+        font-size: 1.2rem;
+        border-color: unset;
+        border: none;
+        outline: unset;
+        box-shadow: unset;
+
+        div{
+
+            div{
+                color: white;
+            }
+        }
+    }
+    .select__menu-list.css-4ljt47-MenuList{
+        background: #bf2957;
+        border-radius: 2px;
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 500px){
+    .customDropdown{
+        .css-yt9ioa-option,.css-9gakcf-option{
+            font-size: 2.5rem;
+            font-weight: bold;
+        }
+        .css-1s2u09g-control, .select__control--focused, .css-1pahdxg-control{
+            div{
+                div{
+                    font-size: 3rem;
+                    font-weight: bold;
+                    z-index: 999999;
+                }
+            }
+        }
+    }
+}

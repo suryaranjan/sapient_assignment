@@ -1,0 +1,126 @@
+.inputContainer {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+  }
+  
+  .inputContainer:focus-within label {
+    transform: translate(0, 2px) scale(0.8);
+    color: #03a8a8;
+    font-size: 16px;
+  }
+  
+  .inputContainer .filled {
+    transform: translate(0, 2px) scale(0.8);
+  }
+  
+  .inputContainer label {
+    position: absolute;
+    pointer-events: none;
+    transform: translate(0, 23px) scale(1);
+    transform-origin: top left;
+    transition: 200ms cubic-bezier(0, 0, 0.2, 1) 0ms;
+    color: #6f81a5;
+    font-size: 16px;
+    line-height: 1;
+    top: 0px;
+    left: 0px;
+    color: #b2aeae;
+  }
+  
+  .inputContainer input {
+    height: 57px;
+    border-radius: 0px;
+    border: none;
+    padding: 9px 16px 4px 0px;
+    font-size: 16px;
+    line-height: 1;
+    outline: none;
+    box-shadow: none;
+    transition: 200ms cubic-bezier(0, 0, 0.2, 1) 0ms;
+    border-bottom: 1px solid #b2aeae;
+  }
+  
+  .inputContainer input:focus {
+    border-bottom:  2px solid #03a8a8;
+  }
+  .inputContainer{
+      p{
+        color: #a31414;
+        font-size: 1.1rem;
+        margin: 3px 2px;
+      }
+  }
+  .signInContainer{
+        width: 50%;
+        margin: auto;
+        display: flex;
+        justify-content: space-around;
+      
+      .signInBanner{
+        width: 47%;
+        align-self: flex-start;
+        margin-top: 4rem;
+
+        h2{
+            font-size: 3rem;
+        }
+        span{
+            font-size: 1.5rem;
+        }
+      }
+      .signInForm{
+        width: 49%;
+        align-self: center;
+
+      }
+      button{
+        font-size: 1.5rem;
+        width: 100%;
+        padding: 1.5rem 4rem;
+        background: #bf2957;
+        color: white;
+        border: none;
+        border-radius: 3px;
+        margin-top: 3rem;
+        margin-bottom: 2rem;
+        font-weight: 600;
+      }
+  }
+  @media (max-width: 1050px){
+    .signInContainer{
+        width: 95%;
+    }
+}
+@media (max-width: 500px){
+    .signInContainer{
+        width: 95%;
+        flex-direction: column;
+
+        .signInBanner{
+            width: 100%;
+
+            h2{
+                font-size: 5rem;
+            }
+            span{
+                font-size: 2.5rem;
+            }
+        }
+        .signInForm{
+            width: 100%;
+
+            button{
+                font-size: 3rem;
+                padding: 2rem;
+            }
+        }
+    }
+    .inputContainer{
+      p{
+        font-size: 2.1rem;
+      }
+  }
+    
+}

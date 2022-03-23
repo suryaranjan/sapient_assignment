@@ -1,0 +1,103 @@
+.categoryCard{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: rgb(0 0 0 / 45%) 0px 18px 13px -20px;
+    padding-bottom: 3rem;
+    
+    .categoryCardImageContainer{
+        width: 30%;
+        align-self: center;
+        
+        .categoryCardImage{
+            width: 100%;
+        }
+    }
+    .categoryCardDescription{
+        align-self: center;
+        text-align: center;
+
+        p{
+            font-size: 3rem;
+            text-align: center;
+            font-weight: 600;
+        }
+        span{
+            font-size: 1.6rem;
+        }
+        a{
+            display: block;
+            text-align: center;
+            margin-top: 2rem;
+            text-decoration: none;
+            color: white;
+            background: #bf2957;
+            width: fit-content;
+            margin: auto;
+            margin-top: 2rem;
+            padding: 1.8rem;
+            border-radius: 6px;
+            font-size: 1.5rem;
+            font-weight: 600;
+        }
+    }
+
+}
+.cardListContainer{
+    display: flex;
+    flex-direction: column;
+}
+
+@media (max-width: 1050px){
+    .categoryCard{
+        padding-bottom: 3rem;
+        .categoryCardImageContainer{
+            width: 33%
+        }
+        .categoryCardDescription{
+            p{
+                margin-bottom: 2rem;
+            }
+            a{
+                padding: 1.2rem;
+                border-radius: 3px;
+            }
+        }
+    }
+}
+@media (max-width: 660px){
+    .categoryCard{
+        .categoryCardImageContainer{
+            width: 38%
+        }
+        .categoryCardDescription{
+            p{
+                margin-bottom: 2rem;
+                font-size: 2.4rem;
+            }
+            a{
+                padding: 1.1rem;
+                border-radius: 3px;
+            }
+        }
+    }
+}
+
+@media (max-width: 500px){
+    .categoryCard{
+        padding-bottom: 5rem;
+        .categoryCardImageContainer{
+            width: 38%;
+        }
+        .categoryCardDescription{
+            a{
+                font-size: 1.8rem;
+            }
+            
+            span{
+                font-size: 2rem;
+            }
+        }
+    }
+}

@@ -1,0 +1,29 @@
+.sideNavBar{
+    flex-basis: 100%;
+    display: flex;
+    flex-direction: column;
+    background: #eaeaea;
+    max-width: 17%;
+    min-height: 100vh;
+
+    .sideNavBarItem {
+        font-size: 1.8rem;
+        margin: 0;
+        padding: 2rem 1rem 2rem 3rem;
+        border-bottom: 1px solid #cdc7c7;
+        color: #605c5c;
+        font-weight: 500;
+    }
+}
+p.sideNavBarItem.activeNavItem {
+    background: #d0cece;
+    color: black;
+}
+
+@media (max-width: 1050px){
+    .sideNavBar{
+        width: 23%;
+        flex-basis: unset;
+        max-width: unset;
+    }
+}

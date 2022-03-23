@@ -1,0 +1,313 @@
+.cart{
+    width: 100%;
+    background: #f2efef;
+}
+
+.cartHeader{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+    padding: 2rem 2rem;
+    box-sizing: border-box;
+    background: white;
+
+    h3{
+        font-size: 1.8rem;
+        align-self: center;
+         margin: 0px;
+    }
+
+    span{
+        font-size: 3rem;
+        font-weight: 500;
+        align-self: center;
+        margin-top: 0rem;
+    }
+}
+
+.cartItemList{
+    width: 100%;
+    height: 60vh;
+    overflow: auto;
+
+    .cartItemCard{
+        display: flex;
+        width: 100%;
+        padding: 2rem;
+        box-sizing: border-box;
+        background: white;
+        border-bottom: 1px solid #e7e0e0;
+
+        .cartItemCardImage{
+            width: 17%;
+
+            img{
+                width: 100%;
+            }
+        }
+
+        .cartItemDescription{
+            margin-left: 1rem;
+            width: 90%;
+            
+            p{
+                font-size: 1.7rem;
+                font-weight: bold;
+            }
+
+            div{
+                display: flex;
+                margin-top: 2rem;
+                flex-basis: 100%;
+            }
+
+            span{
+                font-size: 1.5rem;
+                margin-right: 2rem;
+                font-weight: bold;
+                align-self: center;
+            }
+            .cartItemSymbol.minus{
+                line-height: 0rem;
+                height: 2.5rem;
+                width: 4rem;
+                padding-bottom: 1.8rem;
+                background: #bf2957;
+                border: 1px;
+                border-radius: 3px;
+                color: white;
+                font-weight: bold;
+                margin-right: 2rem;
+                font-size: 3rem;
+            }
+            .cartItemSymbol.plus{
+                line-height: 0rem;
+                height: 2.5rem;
+                width: 4rem;
+                padding-bottom: 0.1rem;
+                background: #bf2957;
+                border: 1px;
+                border-radius: 3px;
+                color: white;
+                font-weight: bold;
+                margin-right: 2rem;
+                font-size: 2.4rem;
+            }
+
+            .cartItemTotalPrice{
+                margin-left: auto;
+                margin-right: 0;
+            }
+        }
+    }
+
+    .cartBannerCard{
+        display: flex;
+        margin-top: 2rem;
+        padding: 2rem;
+        background: white;
+        width: 96%;
+        margin: auto;
+        box-sizing: border-box;
+        margin-top: 1rem;
+
+        .cartBannerCardImage{
+            width: 17%;
+
+            img{
+                width: 100%;
+            }
+        }
+        p{
+            margin: 0px;
+            margin-left: 4rem;
+            font-size: 1.5rem;
+            align-self: center;
+            font-weight: 500;
+        }
+    }
+}
+
+.cartButtonContainer{
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-align: center;
+    padding-bottom: 2rem;
+    background: white;
+
+    p{
+        margin-bottom: 2rem;
+    }
+    .emptyCart.cartButton{
+        a{
+            margin: auto;
+            color: white;
+        }
+    }
+    .cartButton{
+        display: flex;
+        justify-content: space-between;
+        padding: 2rem;
+        border: 1px;
+        background: #bf2957;
+        border-radius: 3px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: white;
+        width: 82%;
+        margin: auto;
+
+        span{
+            align-self: center;
+        }
+        .cartGreaterSymbol{
+            margin-left: 1rem;
+            font-size: 1.8rem;
+        }
+    }
+}
+
+.emptyCartCard{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+
+    p{
+        font-size: 2rem;
+        font-weight: bold;
+        margin-top: 5rem;
+    }
+    span{
+        font-size: 1.5rem;
+        font-weight: 500;
+    }
+}
+.popup-content {
+    width: 30%;
+}
+
+.popup-overlay {
+    background: rgba(204, 204, 204, 0.5);
+}
+@media (max-width: 1870px){
+    
+    .popup-content {
+        width: 35%;
+    }
+    
+}
+@media (max-width: 1590px){
+    .cartItemList{
+        .cartItemCard{
+            .cartItemCardImage{
+                width: 23%;
+            }
+        }
+    }
+    .popup-content {
+        width: 40%;
+    }
+    
+}
+@media (max-width: 1370px){
+    
+    .popup-content {
+        width: 45%;
+    }
+    
+}
+@media (max-width: 1370px){
+    
+    .popup-content {
+        width: 48%;
+    }
+    
+}
+
+@media (max-width: 1050px){
+    .cartButtonContainer{
+        .cartButton.emptyCart{
+            width: 96.5%;
+        }   
+    }
+    .cart.container{
+        width: 100%;
+        .cartBannerCard{
+            width: 98%;
+        }
+        .cartButtonContainer{
+            .cartButton{
+                width: 90%;
+            }
+        }
+    }
+    .cartItemList{
+        .cartItemCard{
+            .cartItemCardImage{
+                width: 10%;
+            }
+        }
+    }
+
+}
+
+@media (max-width: 500px){
+    .cartItemList{
+        height: 76vh;
+    }
+    .cartButtonContainer{
+        .cartButton.emptyCart{
+            font-size: 2rem;
+        }   
+    }
+    .cartHeader{
+        h3{
+            font-size: 3rem;
+        }
+    }
+    .cartItemList {
+        .cartItemCard{
+            .cartItemCardImage{
+                width: 20%;
+            }
+            .cartItemDescription{
+                p{
+                    font-size: 3rem;
+                }
+                .cartItemSymbol.minus{
+                    font-size: 4rem;
+                    height: 4rem;
+                    width: 7rem;
+                    padding-bottom: 2.8rem;
+                }
+                .cartItemSymbol.plus{
+                    font-size: 4rem;
+                    height: 4rem;
+                    width: 7rem;
+                    padding-bottom: 0.6rem;
+                }
+                span{
+                    font-size: 3rem;
+                }
+            }   
+        }
+    }
+    .cartButtonContainer{
+        p{
+            font-size: 2.5rem;
+        }
+        .cartButton{
+            font-size: 2.5rem;
+            span{
+                span{
+                    font-size: 3rem;
+                    margin-left: 2rem;
+                }
+            }
+        }
+    }
+
+}

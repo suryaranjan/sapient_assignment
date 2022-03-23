@@ -1,0 +1,100 @@
+
+.headerContainer{
+    box-shadow: 0 6px 15px -5px #dbdde1;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+
+    &Logo{
+        max-width: 18rem;
+        
+        img{
+            width: 100%;
+        }
+    }
+
+    &MenuItems{
+        width: 64%;
+        align-self: flex-end;
+        line-height: 6rem;
+
+        .menuItems{
+            text-decoration: none;
+            color: #7c8188;
+            padding: 1rem;
+            font-size: 1.8rem;
+            font-weight: 500;
+        }
+    }
+
+    &End{
+        &MenuItems{
+            margin-bottom: 1.7rem;
+            display: flex;
+            justify-content: space-around;
+
+            .endMenuItems{
+                text-decoration: none;
+                color: #575551;
+                font-weight: 500;
+                font-size: 1.4rem;
+            }
+        }
+    }
+
+    &Cart{
+        display: flex;
+        max-width: 12rem;
+        padding: 1rem;
+        background: #eeeeee;
+
+        img{
+            width: 30%;
+        }
+        span{
+            color: #4b4d54;
+            padding-left: 1rem;
+            align-self: center;
+            font-weight: 500;
+            font-size: 1.4rem;
+        }
+    }
+}
+
+@media (max-width: 1050px){
+    .header{
+        width: 100%;
+    }
+}
+
+@media (max-width: 500px){
+    .headerContainer{
+        margin-bottom: 2rem;
+    }
+    .header.container{
+
+        &Logo{
+            max-width: 20rem;
+        }
+        
+            .headerCart{
+                max-width: 19rem;
+                height: 76%;
+                
+                .img{
+                    width: 33%;
+                    align-self: center;
+                    margin-bottom: 1rem;
+                }
+
+                span{
+                    font-size: 2.4rem;
+                    margin-bottom: 1rem;
+                    align-self: center;
+                }
+            }
+        
+    }
+    
+}
